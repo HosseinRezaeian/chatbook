@@ -31,12 +31,15 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'channels',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'chat',
+
 ]
 
 MIDDLEWARE = [
@@ -67,7 +70,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'chatbook.wsgi.application'
+# WSGI_APPLICATION = 'chatbook.wsgi.application'
+ASGI_APPLICATION = "chatbook.asgi.application"
 
 
 # Database
